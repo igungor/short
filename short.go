@@ -21,10 +21,14 @@ var (
 	mapping = initMapping()
 )
 
+// Encode generates a minimum 5-characters long representation of given n.
+// Given number could be auto-incremented integers used in relational
+// databases.
 func Encode(n int) string {
 	return enbase(encode(n))
 }
 
+// Decode returns the number represented by the short string s.
 func Decode(s string) int {
 	return decode(debase(s))
 }
