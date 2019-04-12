@@ -1,1 +1,1 @@
-module github.com/igungor/shorturl
+module github.com/igungor/short
